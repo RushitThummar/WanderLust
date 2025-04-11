@@ -1,0 +1,403 @@
+body {
+  background-color: pink;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+
+.ind-list {
+  padding-left: 2rem !important;
+}
+/* background image */
+.back-img {
+  /* width: 100rem; */
+  height: 45vh;
+  background-size: cover;
+  border-radius: 0.5rem;
+  margin-top: 1px !important;
+  background-repeat: no-repeat;
+  background-image: url("https://media.istockphoto.com/id/1006274290/photo/caribbean-paradise.webp?a=1&b=1&s=612x612&w=0&k=20&c=WkJL0mVTYU1l3ukDNZ1hlq_rxMBnoVh722sNWcyFc7A=");
+  box-shadow: 5px 5px gray;
+}
+.back-text {
+  padding: 65px;
+  font-size: 20px;
+  text-align: center;
+}
+.back-text h3 {
+  font-size: 30px !important;
+  color: #fff;
+}
+.back-text p {
+  color: darkolivegreen;
+}
+@media (max-width: 768px) {
+  .sea-text {
+    display: none;
+  }
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: aliceblue;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.nav-link {
+  color: #222222 !important; /*use to overrride bootstrap */
+  margin-left: 0rem !important;
+}
+.btn-search {
+  display: flex !important;
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+  padding: 0.32rem 1rem 0 1rem !important;
+}
+.btn-search:active {
+  background-color: #fe424d !important;
+  color: #fff !important;
+}
+.btn-search i {
+  display: inline !important;
+  padding: 0.26rem 0.5rem 0 0.5rem !important;
+  margin-right: 0.5 !important;
+}
+.search-inp {
+  margin-left: -16rem;
+  border-radius: 2rem !important;
+  font-size: 0.9rem !important;
+  width: 14.7rem !important;
+}
+.dropdown {
+  margin-left: auto !important;
+}
+.dropdown p {
+  display: inline;
+}
+.dropdown button {
+  width: auto !important;
+  height: 3rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu {
+  margin-top: 0.5rem !important;
+  margin-right: 10rem;
+  width: 14rem;
+  padding: 0.7rem;
+  transform: translateX(-65%);
+}
+#web-title {
+  color: #fe424d !important;
+  font-size: 1.7rem;
+  margin-left: -0.5rem !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  font-family: "Kaushan Script", cursive;
+}
+/* 
+.navbar-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.fa-circle-user {
+  font-size: 1.5rem;
+}
+#responsive-registration {
+  display: none;
+}
+
+.navsign {
+  color: #31f044 !important;
+}
+.navlog {
+  color: #f1184f !important;
+}
+
+@media (max-width: 767px) {
+  .dropdown {
+    display: none;
+  }
+  #web-title {
+    color: #fe424d !important;
+    font-size: 1.6rem !important;
+  }
+  .alert {
+    margin-top: 0.5rem !important;
+    font-size: 0.9rem;
+    padding: 0.6rem !important;
+  }
+  .btn-close {
+    padding: 0.9rem !important;
+  }
+  #responsive-registration {
+    display: inline;
+    margin: 1rem;
+  }
+  .navbar-collapse {
+    text-align: center;
+    justify-content: center;
+  }
+  .search-inp {
+    margin-left: auto;
+    border-radius: 2rem !important;
+    font-size: 0.9rem !important;
+    width: 9.7rem !important;
+  }
+  .btn-search {
+    margin-right: auto;
+    display: flex !important;
+    background-color: #fe424d !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+    padding: 0.32rem 1rem 0 1rem !important;
+  }
+  .nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container-fluid {
+    background-color: aliceblue;
+  }
+}
+
+/* Footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-brand,
+.f-info-links,
+.f-info-socials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i {
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+}
+.f-info {
+  text-align: center;
+  height: 8rem;
+  display: flex;
+  background-color: ghostwhite;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  bottom: 0;
+  width: 100%;
+}
+/* Cards */
+.listing-card {
+  border: none !important;
+  margin: 1rem 1rem 1rem 1.5rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text p {
+  font-weight: 400 !important;
+}
+.listing-link {
+  text-decoration: none !important;
+}
+/* Card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* New page */
+.add-btn {
+  border: none !important;
+}
+
+/* Edit page */
+.edit-btn {
+  border: none !important;
+}
+
+/* Show page */
+.show-img {
+  height: 50vh;
+}
+/* Edit&Delete btn */
+.btns {
+  display: flex;
+}
+.btn-del {
+  background-color: red !important;
+  border: none !important;
+}
+/* Show Card */
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* footer set bootom */
+.sign {
+  margin-bottom: 45%;
+}
+
+/* filter */
+#filter-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+#filters-container {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+}
+
+#filters {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.filter {
+  flex: 0 0 auto;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 0.8rem;
+}
+
+.filter a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.scroll-btn {
+  background-color: #fff;
+  border: 0.1rem solid #cccccc;
+  border-radius: 50%;
+  color: #a6a6a6;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn.left-btn {
+  margin-right: 1rem;
+  margin-left: 3rem;
+}
+
+.scroll-btn.right-btn {
+  margin-left: 1rem;
+}
+
+.tax-toggle {
+  border: 0.1rem solid #a6a6a6;
+  border-radius: 1rem;
+  height: 3rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  display: flex;
+  margin-top: 0.9rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .tax-toggle {
+    flex-basis: 100%;
+    text-align: left;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    font-size: 0.8rem !important;
+    width: auto !important;
+    height: 2rem !important;
+    border: none;
+    justify-content: center;
+  }
+
+  .toggle-container {
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #a6a6a6;
+    border-radius: 0.7rem;
+  }
+
+  .scroll-btn {
+    visibility: hidden;
+    margin: 0 -1.75rem;
+  }
+}
+
+.tax-info {
+  display: none;
+}
+/* offers */
+.offers {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+.offers i {
+  font-size: 1.1rem;
+}
+
+.offers span {
+  font-size: 1.1rem;
+}
+/* map */
+.map-click {
+  text-align: center;
+  margin-bottom: -1rem;
+}
+#map {
+  height: 400px;
+  border-radius: 5%;
+}
