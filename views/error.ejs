@@ -1,0 +1,9 @@
+<!-- it is a error page redrive when error creat -->
+<% layout("/layouts/boilerplate")%>
+
+<div class="row sign">
+  <div class="alert alert-danger col-6 offset-3" role="alert">
+    <h4 class="aleart-heading"><%= err.message %></h4>
+  </div>
+  <div class="mb-5"></div>
+</div>
