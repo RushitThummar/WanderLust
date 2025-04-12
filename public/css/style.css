@@ -401,3 +401,35 @@ body {
   height: 400px;
   border-radius: 5%;
 }
+@media (max-width: 768px) {
+  .offset-3 {
+    margin-left: 2% !important;
+  }
+  .col-6 {
+    width: 95% !important;
+  }
+  .col-8 {
+    width: 95% !important;
+  }
+  .col-5 {
+    width: 92% !important;
+  }
+  .mb-3 {
+    padding-top: 0.5rem;
+  }
+  .offers span {
+    font-size: 0.9rem;
+  }
+  .offset-2 {
+    margin-left: 5%;
+  }
+  a.nav-link.ms-2 {
+    display: none;
+  }
+  div.col-8.offset-2 {
+    margin-left: 2% !important;
+  }
+  div.mb-3.col-4 {
+    width: 95% !important;
+  }
+}
