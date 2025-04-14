@@ -78,7 +78,7 @@ module.exports.renderEditForm = async (req, res) => {
 
 module.exports.updateListing = async (req, res) => {
   let { id } = req.params;
-  let response = await geoCodingClient
+  let response = await geocodingClient
     .forwardGeocode({
       query: ` ${req.body.listing.location},${req.body.listing.country}`,
       limit: 1,
